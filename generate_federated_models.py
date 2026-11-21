@@ -12,7 +12,7 @@ def build_discipline_ifc(filename: str, discipline: str, epsg: str, easting: flo
         "georeference.edit_georeferencing",
         model,
         projected_crs={"Name": epsg, "Description": "Project Survey CRS"},
-        map_conversion={
+        coordinate_operation={
             "Eastings": easting,
             "Northings": northing,
             "OrthogonalHeight": height,

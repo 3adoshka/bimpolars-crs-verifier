@@ -108,8 +108,7 @@ if __name__ == "__main__":
             "PRJ01-MEP-ZZ-00-M3-M-0001.ifc",
         ],
     )
-    print("
-=== MULTI-MODEL CRS & SITE ORIGIN FEDERATION SCORECARD ===")
+    print("=== MULTI-MODEL CRS & SITE ORIGIN FEDERATION SCORECARD ===")
     print(scorecard.select([
         "container",
         "epsg_code",
