@@ -1,4 +1,4 @@
-container,element_count,has_georeferencing,epsg_code,crs_valid_pyproj,easting_m,northing_m,ortho_height_m,grid_north_deg,map_scale,reference_master,audit_timestamp_utc,crs_match,delta_easting_m,delta_northing_m,delta_z_m,delta_angle_deg,federation_gate_pass
-PRJ01-ARC-ZZ-00-M3-A-0001.ifc,4,true,EPSG:32638,true,654321.0,2812345.0,12.5,0.0,1.0,PRJ01-ARC-ZZ-00-M3-A-0001.ifc,2026-11-21T20:44:52Z,true,0.0,0.0,0.0,0.0,true
-PRJ01-STR-ZZ-00-M3-S-0001.ifc,4,true,EPSG:32638,true,654321.0005,2812345.0002,12.5,0.0,1.0,PRJ01-ARC-ZZ-00-M3-A-0001.ifc,2026-11-21T20:44:52Z,true,0.0005,0.0002,0.0,0.0,true
-PRJ01-MEP-ZZ-00-M3-M-0001.ifc,4,true,EPSG:4326,true,0.0,0.0,0.0,30.00001,1.0,PRJ01-ARC-ZZ-00-M3-A-0001.ifc,2026-11-21T20:44:52Z,false,654321.0,2812345.0,12.5,30.00001,false
+container,ifc_schema,element_count,has_georeferencing,epsg_code,vertical_datum,crs_valid_pyproj,orthogonal_vector_valid,easting_m,northing_m,ortho_height_m,grid_north_deg,map_scale,reference_master,audit_timestamp_utc,crs_match,vertical_datum_match,delta_easting_m,delta_northing_m,delta_z_m,delta_angle_deg,delta_scale,federation_gate_pass
+PRJ01-ARC-ZZ-00-M3-A-0001.ifc,IFC4,4,true,EPSG:32638,UNSPECIFIED,true,true,654321.0,2812345.0,12.5,0.0,1.0,PRJ01-ARC-ZZ-00-M3-A-0001.ifc,2026-11-21T20:55:39Z,true,true,0.0,0.0,0.0,0.0,0.0,true
+PRJ01-STR-ZZ-00-M3-S-0001.ifc,IFC4,4,true,EPSG:32638,UNSPECIFIED,true,true,654321.0005,2812345.0002,12.5,0.0,1.0,PRJ01-ARC-ZZ-00-M3-A-0001.ifc,2026-11-21T20:55:39Z,true,true,0.0005,0.0002,0.0,0.0,0.0,true
+PRJ01-MEP-ZZ-00-M3-M-0001.ifc,IFC4,4,true,EPSG:4326,UNSPECIFIED,true,true,0.0,0.0,0.0,30.000012,1.0,PRJ01-ARC-ZZ-00-M3-A-0001.ifc,2026-11-21T20:55:39Z,false,true,654321.0,2812345.0,12.5,30.000012,0.0,false
