@@ -1,0 +1,35 @@
+name: Multi-Model CRS Alignment Gate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  crs-federation-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install OpenBIM & Georeferencing Stack
+        run: |
+          python -m pip install --upgrade pip
+          pip install "bimpolars[ifc] @ git+https://github.com/bedrock-engineer/bimpolars.git" ifcopenshell polars pyproj
+
+      - name: Generate Discipline IFCs & Verify CRS Alignment
+        run: |
+          python generate_federated_models.py
+          python crs_alignment_verifier.py
+
+      - name: Upload Federation CRS Scorecard Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: federation-crs-scorecard
+          path: crs_audit_outputs/

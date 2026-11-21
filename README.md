@@ -1,3 +1,5 @@
+[![Multi-Model CRS Alignment Gate](https://github.com/3adoshka/bimpolars-crs-verifier/actions/workflows/crs_gate.yml/badge.svg)](https://github.com/3adoshka/bimpolars-crs-verifier/actions/workflows/crs_gate.yml)
+
 # Multi-Model CRS & Site Origin Federation Verifier (`bimpolars` + `pyproj`)
 
 Automated pre-federation BIM QA/QC gate verifying that Architectural, Structural, and MEP IFC4 models share identical **IFC4 Georeferencing (`IfcProjectedCRS` & `IfcMapConversion`)**, survey coordinates, and True North orientation within 1.0 mm tolerance prior to Navisworks/ACC federation.
